@@ -44,7 +44,7 @@ export function handleDeleteTodo (todo) {
 
         return API.deleteTodo(todo.id)
             .catch(() => {
-            displatch(addTodo(todo))
+            dispatch(addTodo(todo))
             alert('An error occurred. Try again.')
             })
     }
